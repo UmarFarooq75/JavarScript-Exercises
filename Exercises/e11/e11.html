@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let friends = ["Ali", "Younas", "Khurram"];
+
+            for (let i in friends) {
+                console.log(friends[i]);
+            }
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 11 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

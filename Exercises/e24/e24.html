@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let arr = ['FLY', 'SWIM', 'DRIVER', 'CODE', 9 ,'RuN',];
+            for (let i in arr) {
+                if (arr[i] == String | arr[i].length>3) {
+                    console.log(true);
+                } else {
+                    console.log(false);
+                }
+            }
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 24 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

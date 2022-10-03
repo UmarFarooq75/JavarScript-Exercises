@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function make_album(artistName, albumTitle, tracks = null) {
+            if (tracks === null) {
+                return album = { 'Artist Name': artistName, 'Album Title': albumTitle };
+            } else {
+                return album = { 'Artist Name': artistName, 'Album Title': albumTitle, 'Tracks': tracks };
+            }
+        };
+        function myFunction() {
+            console.log(make_album('Burn it', 'G3'))
+            console.log(make_album('These Days', 'Mosatap'))
+            console.log(make_album('Down', 'Old school'))
+            console.log(make_album('5911', '5911', 10));
+
+            message = "Please Check the console";
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 40 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

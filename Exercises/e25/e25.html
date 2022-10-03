@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let color = 'yellow';
+            if (color === 'yellow' || color === 'Yellow') {
+                console.log("You just earned 5 points");
+            }
+            color = 'red'
+            if (color === 'red' || color === 'Red') {
+                console.log("You just earned 5 points");
+            }
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 25 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    const myCar = {
+        make: 'Ford',
+        model: 'Mustang',
+        year: 1969
+    };
+    function myFunction() {
+        console.log(myCar);
+        myCar1 =new Object();
+        myCar1.make="Frari";
+        myCar1.model="Mustang";
+        myCar1.year="1970";
+        console.log(myCar1)
+        message = "Please Check the console"
+        document.getElementById("message").innerText = message;
+    }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 21 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

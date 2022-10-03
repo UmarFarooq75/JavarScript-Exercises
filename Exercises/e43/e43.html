@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function show_magicians(array) {
+            for (let i of array) {
+                console.log(i);
+            }
+        }
+        function make_great(array) {
+            for (let i in array) {
+                array[i] = 'Great ' + array[i];
+            }
+            return array;
+        }
+        function myFunction() {
+            let magicians = ['magicianRed', 'magicianBlack', 'VoidMagican', 'magicianDeciple'];
+            let copyMagicians = (make_great(new Array(...magicians)));
+            console.log("Original");
+            show_magicians(magicians);
+            console.log("Copy");
+            show_magicians(copyMagicians);
+
+            message = "Please Check the console";
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 43 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

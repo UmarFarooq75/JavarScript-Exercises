@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let name = "\t Arctic \n";
+            let before="Before : " + name;
+            let namewithoutSpace = name.trim();
+            let after = "After : "+ namewithoutSpace;
+            let message=before+"\n"+after;
+            document.getElementById("person").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 6 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="person"></p>
+</body>
+
+</html>

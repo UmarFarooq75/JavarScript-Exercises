@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let guestList = ["Younas Bhatti", "Lara Punjab", "Ali Randhawa", "Sunny"];
+            for (let i in guestList) {
+                console.log(" I would like to invite you to a dinner : " + guestList[i]);
+            }
+            console.log(guestList[3] + " Bhai cannot make it");
+            guestList[3] = "Junaid";
+            for (let i in guestList) {
+                console.log(" I would like to invite you to a dinner : " + guestList[i]);
+            }
+            console.log("I found a bigger table, I am inviting more people");
+            guestList.unshift("Sohaib");
+            guestList.splice(guestList.length / 2, 0, "Jon Alia");
+            guestList.push("Farzanaa");
+            for (let i in guestList) {
+                console.log(" I would like to invite you to a dinner : " + guestList[i]);
+            }
+            console.log("Sorry , I can only invite 2 people for now");
+            for (let i = guestList.length; i > 2; i--) {
+                console.log(guestList.pop() + " Sorry, I cannot invite you for now");
+            }
+            for (let i in guestList) {
+                console.log(guestList[i] + " : You Guys are still invited")
+            }
+            for (let i = guestList.length; i > 0; i--) {
+                guestList.pop();
+            }
+            console.log(guestList);
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 17 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

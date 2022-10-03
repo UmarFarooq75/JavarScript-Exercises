@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let fruits = ['Bannana', 'Apple', 'Mango'];
+
+            if (fruits.includes('Bannana')) {
+                console.log("I really like Bannana!");
+            }
+            if (fruits.includes('Apple')) {
+                console.log("I really like Apple!");
+            }
+            if (fruits.includes('None')) {
+                console.log("I really like None!");
+            }
+            if (fruits.includes('Mango')) {
+                console.log("I really like Mango!");
+            }
+            if (fruits.includes('Grapes')) {
+                console.log("I really like Grapes!");
+            }
+
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 2 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

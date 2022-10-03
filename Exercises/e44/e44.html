@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            function sandwich (...args){
+                console.log("Making " + args + " sandwich")
+            }
+
+            sandwich('onoin', 'butter');
+            sandwich('onoin', 'butter', 'olives');
+            sandwich('onoin', 'cheese', 'lettuce', 'garlic');
+
+            message = "Please Check the console";
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 44 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

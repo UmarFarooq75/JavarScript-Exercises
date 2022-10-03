@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let name = prompt("Enter Name");
+            let message="Helo "+name+" would you like to learn some Python today?";
+            document.getElementById("person").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 2 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="person" style="background-color: black; color: white; width:30%;"></p>
+</body>
+
+</html>

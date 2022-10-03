@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let color = prompt("Enter Color : ");
+            if (color === 'green' || color === 'Green') {
+                console.log("You just earned 5 points\n");
+            } else if (color === 'yellow' || color === 'Yellow') {
+                console.log("You just earned 10 points\n")
+            } else if (color === 'red' || color === 'Red') {
+                console.log("You just earned 15 points\n")
+            }
+            color = 'Red'
+            if (color === 'green' || color === 'Green') {
+                console.log("You just earned 5 points\n");
+            } else if (color === 'yellow' || color === 'Yellow') {
+                console.log("You just earned 10 points\n")
+            } else if (color === 'red' || color === 'Red') {
+                console.log("You just earned 15 points\n")
+            }
+                        color = 'yellow'
+            if (color === 'green' || color === 'Green') {
+                console.log("You just earned 5 points\n");
+            } else if (color === 'yellow' || color === 'Yellow') {
+                console.log("You just earned 10 points\n")
+            } else if (color === 'red' || color === 'Red') {
+                console.log("You just earned 15 points\n")
+            }
+
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 27 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let node = " Node and vs are Installed Im Attaching ss too in the file";
+            var img = document.createElement("img"); 
+            document.getElementById("node").innerText = node;
+            img.src = "ss.png";
+            var src = document.getElementById("image");
+            src.appendChild(img);
+            var img1 = document.createElement("img");
+            img1.src = "ss1.png";
+            var src = document.getElementById("image1");
+            src.appendChild(img1);
+        }
+
+    </script>
+</head>
+
+<body> 
+    <h2> Exercise 1 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="node" style="background-color: black; color: white; width:20%;"></p>
+    <div id="image" style="border:2px solid black ;width:50%; margin-bottom: 20px;"></div>
+    <div id="image1" style="border:2px solid black ;width:59.4%;"> </div>
+</body>
+
+</html>

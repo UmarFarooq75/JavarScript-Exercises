@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let animals = ['horse', 'dog', 'camel'];
+
+            for (let i in animals) {
+                if (i == 0) {
+                    console.log("A horse would be great for riding")
+                } else if (i == 1) {
+                    console.log("A dog would be a great guard")
+                } else if (i == 2) {
+                    console.log("A cammel would be good for desert rides")
+                }
+            }
+            console.log("All of these animals have great loyalty");
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 35 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

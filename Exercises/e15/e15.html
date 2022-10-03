@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let guestList = ["Younas Bhatti", "Lara Punjab", "Ali Randhawa", "Sunny"];
+            for (let i in guestList) {
+                console.log(" I would like to invite you to a dinner : " + guestList[i]);
+            }
+            console.log(guestList[3]+" Bhai cannot make it");
+            guestList[3]="Junaid";
+            for (let i in guestList) {
+                console.log(" I would like to invite you to a dinner : " + guestList[i]);
+            }
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 15 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

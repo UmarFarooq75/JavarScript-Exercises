@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let username = ['Ali', 'Ahmad', 'Sunny', 'Eric', 'John', 'admin']
+            let newUsers = ['alIja', 'newUser1', 'admin', 'newUser9', 'newUser22']
+            for (let i in newUsers) {
+                if (username.includes(newUsers[i].toLowerCase())) {
+                    console.log(newUsers[i] + " is not available, please enter a new username")
+                } else {
+                    console.log(newUsers[i] + " is avaialable")
+                }
+            }
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 32 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

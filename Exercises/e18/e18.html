@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        let indexes = [];
+        function alphabeticOrder(places){
+            let min = Math.min(...indexes);
+            let count = 0;
+            while (count < 5) {
+                for (let i in places) 
+                {
+                    if (min === places[i].charCodeAt(0)) {
+                        console.log(places[i]); count++; 
+                    } 
+                }
+                min++;
+                if (count === places.length)
+                {
+                    break; 
+                }
+            }
+        }
+        function reverseAlphabeticOrder(places){
+                let max = Math.max(...indexes);
+                let count = 0;
+                while (count < 5) {
+                    for (let i in places) {
+                        if (max === places[i].charCodeAt(0)) {
+                            console.log(places[i]);
+                            count++;
+                        }
+                    }
+                    max--;
+                    if (count === places.length) {
+                        break;
+                    }
+                }
+        }
+        function ReverseAlphabeticOrderList(places) {
+            let max = Math.max(...indexes);
+            let count = 0;
+            while (count < 5) {
+                for (let i in places) {
+                    if (max === places[i].charCodeAt(0)) {
+                        [places[count], places[i]] = [places[i], places[count]]; count++;
+                    }
+                } 
+                
+                max--; 
+                
+                if (count === places.length) {
+                     break; 
+                    }
+            }
+        }
+                
+        function AlphabeticOrderList(places){
+            let min = Math.min(...indexes);
+            let count = 0;
+            while (count < 5) {
+                for (let i in places) {
+                    if (min === places[i].charCodeAt(0)) {
+                        [places[count], places[i]] = [places[i], places[count]];
+                        count++;
+                    }
+                }
+                min++;
+                if (count === places.length) {
+                    break;
+                }
+            }
+        }
+        function myFunction() {
+            let places = ["Canada", "Italy", "Tokyo", "New York", "London"];
+            for (let i in places) {
+                indexes.push(places[i].charCodeAt(0));
+            }
+            console.log("Alphabetic Order : ");
+            alphabeticOrder(places)
+            console.log(" Original Array : " + places);
+
+            console.log(" Reverse alphabetic Array ");
+            reverseAlphabeticOrder(places)
+
+            console.log(" Original Array : " + places);
+            console.log(places.reverse());
+
+            AlphabeticOrderList(places);
+            console.log(" Alphabetically list");
+            console.log(places); 
+            ReverseAlphabeticOrderList(places); 
+            console.log("Alphabetically reversed list");
+            console.log(places);
+
+            
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 18 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

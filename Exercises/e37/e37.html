@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function make_shirt(size = 'Large', message = 'I love javascript') {
+            console.log(`shirt with ${size} size says ${message}`);
+        };
+        function myFunction() {
+            make_shirt()
+            make_shirt('Medium')
+            make_shirt('Small', 'for tiny people')
+            message = "Please Check the console";
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 37 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

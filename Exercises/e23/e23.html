@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let v1 = 'swim'
+            let v2 = 'fly'
+            let v3 = 'dive'
+            let v4 = 'run'
+            let v5 = 'code'
+            console.log("True statements")
+            console.log("Is v1=='swim'?  I predict True.");
+            console.log(v1 === 'swim')
+            console.log("Is v2=='fly'?  I predict True.");
+            console.log(v2 === 'fly')
+            console.log("Is v3=='dive'?  I predict True.");
+            console.log(v3 === 'dive')
+            console.log("Is v4=='run'?  I predict True.");
+            console.log(v4 === 'run')
+            console.log("Is v5=='code'?  I predict True.");
+            console.log(v5 === 'code')
+            console.log("False statements")
+            let list = ['FLY', 'SWIM', 'DRIVER', 'CODE', 'RuN'];
+            for (let i in list) {
+                console.log("Is " + list[i] + " a yes statement? I predict False");
+                console.log(list[i] === /\wyes\w/);
+            }
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 23 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let pizzas = ['Special', 'Fajita', 'Cheezi']
+            for (let i of pizzas) {
+                console.log(`I like ${i} pizza\n`);
+            }
+            console.log(`I really like ${pizzas[0]} because its cheesy\nI really like ${pizzas[1]}because its a mixture\nI really like ${pizzas[2]} because its spicy\nI really love pizza!`)
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+        
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 34 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

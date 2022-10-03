@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function titlecase(str) {
+            return str.replace(/\w\S*/g, function (str) { return str.charAt(0).toUpperCase() + str.substr(1) });
+        };
+        function myFunction() {
+            let name = prompt("Enter Name");
+            let message = "Upper Case : "+name.toUpperCase()+ "\nLower Case : " +name.toLowerCase()+ "\nTitle Case : "+titlecase(name);
+            document.getElementById("person").innerText = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 3 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="person" ></p>
+</body>
+
+</html>

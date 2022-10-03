@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let color = prompt("Enter Color : ");
+            if (color === 'yellow' || color === 'Yellow') {
+                console.log("You just earned 5 points\n");
+            } else {
+                console.log("You just earned 10 points\n")
+            }
+
+            color = 'red'
+            if (color === 'green' || color === 'Green') {
+                console.log("You just earned 5 points\n");
+            } else {
+                console.log("You just earned 10 points\n")
+            }
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 26 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>

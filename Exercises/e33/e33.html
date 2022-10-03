@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+            for (let i in num) {
+                if (num[i] === 1) {
+                    console.log(num[i] + "st")
+                } else if (num[i] === 2) {
+                    console.log(num[i] + "nd")
+                } else if (num[i] === 3) {
+                    console.log(num[i] + "rd")
+                } else {
+                    console.log(num[i] + "th")
+                }
+            }
+            message = "Please Check the console"
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Exercise 33 </h2><br>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="message"></p>
+</body>
+
+</html>
